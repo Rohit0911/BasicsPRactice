@@ -16,7 +16,7 @@ fieldList.forEach((x,y)=>{
 })
 
 
-console.log(fieldList);
+// console.log(fieldList);
 
 /*
 Output:

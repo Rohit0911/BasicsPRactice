@@ -35,4 +35,13 @@ console.log(pos);
 
 // const updated=Fields.Measures.filter((x)=>x.entityName!='Discount')
 
-// console.log(updated);
+
+
+const updated=[...fieldList.slice(0,pos), ...fieldList.slice(pos+1)]
+
+// console.log(updated.length);
+// console.log(fieldList.length);
+
+console.log(updated);
+
+

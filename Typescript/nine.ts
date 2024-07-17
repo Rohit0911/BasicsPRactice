@@ -1,7 +1,7 @@
 import {Fields} from "./data";
 import { dataIndex } from "./7_Order";
 
-let c;
+
 
 Fields.Measures.forEach((x)=>{
     // let c=x.datasetId;
@@ -14,11 +14,30 @@ Fields.Measures.forEach((x)=>{
     let val=x.datasetId;
 
     x[z]=val;
+    
+    const {datasetId, ...newobj}=x;
+    console.log(newobj);
+    
 })
 
 
 
-console.log(Fields.Measures);
+
+// Fields.Measures.forEach((x,y)=>{
+
+// })
+
+
+// Slice and splice difference 
+// USed to to rmmove the any key:val
+
+// const updated=Fields.Measures.filter((x)=>x.datasetId!='Discount')
+
+// Fields.Measures.filter((x)=>!x.datasetId)
+
+
+
+// console.log(Fields.Measures);
 
 
 /**

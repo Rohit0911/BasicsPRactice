@@ -17,7 +17,7 @@ fieldList.forEach((x,y)=>{
 
 // console.log(fieldList);
 
-console.log(NumericalItems);
+// console.log(NumericalItems);
 
 
 

@@ -1,13 +1,38 @@
 import { calculatedfields } from "./3_CalFieldKey";
 
 
-let result=[];
+let result=new Array();
 
-calculatedfields.filter(function (item){
-    if(item.variables=='numerical'){
+// calculatedfields.filter(function (item){
+//     if(item.variables){
+        
+//         result.concat(item.variables)
+//     }
+
+
+// })
+
+for(let i=0;i<calculatedfields.length;i++){
+
+    
+    result.push(...calculatedfields[i].variables);
+    
+}
+
+
+let finalArray = new Array();
+
+result.map(x=>{
+    if(x.variableType=='numerical'){
+        // console.log(x);
+        finalArray.push(x)
         
     }
-    result.concat(item.variables)
+
+
 })
 
-console.log(result);
+
+
+// console.log(result);
+console.log(finalArray);

@@ -8,7 +8,7 @@ import { fieldList } from "./1_Prepare";
 
 
 const calculatedfields=fieldList.filter(item=>{
-    if(item.calculatedFieldKey){
+    if(item.calculatedFieldKey!=undefined){
         // calculatedfields.push(item.calculatedFieldKey);
         return item.calculatedFieldKey;
         
