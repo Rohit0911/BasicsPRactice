@@ -22,15 +22,31 @@ for(let i=0;i<calculatedfields.length;i++){
 
 let finalArray = new Array();
 
-result.map(x=>{
-    if(x.variableType=='numerical'){
-        // console.log(x);
-        finalArray.push(x)
+// result.map(x=>{
+//     if(x.variableType=='numerical'){
+//         // console.log(x);
+//         // finalArray.push(x)
         
+//     }
+
+
+// })
+
+// finalArray=result.filter(x=>x.variableType).reduce((p,q)=>p.concat(x))
+
+finalArray=result.filter(x=>{
+    if(x.variableType=='numerical'){
+        return x
     }
-
-
 })
+
+
+
+
+
+
+
+
 
 
 
