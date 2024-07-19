@@ -36,7 +36,7 @@ let finalArray = new Array();
 
 finalArray=result.filter(x=>{
     if(x.variableType=='numerical'){
-        return x
+        return x;
     }
 })
 
